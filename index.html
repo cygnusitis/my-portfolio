@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- Open Graph Tags -->
+
+    <meta content="web_standard" name="shell-type" />
+    <link rel="icon" href="cygy.png" type="image/x-icon">
+    <title>CJ Bulanadi - COO</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <style>
+      @layer base {
+
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+
+        body {
+          overscroll-behavior: none;
+        }
+
+        main> :first-child {
+          margin-top: 0 !important;
+        }
+
+        main> :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+              "surface-container": "#f0edec",
+              "on-error-container": "#93000a",
+              "inverse-on-surface": "#f3f0ef",
+              "primary-container": "#e8f5c9",
+              "on-surface": "#1c1b1b",
+              "on-primary": "#ffffff",
+              "surface-dim": "#dcd9d9",
+              "on-surface-variant": "#45483e",
+              "surface-tint": "#576340",
+              "on-primary-container": "#65714e",
+              "primary-fixed": "#dbe8bd",
+              "on-primary-fixed-variant": "#404b2b",
+              "secondary-fixed-dim": "#bec3f5",
+              "surface-container-low": "#f6f3f2",
+              "on-secondary-fixed": "#111840",
+              "surface-variant": "#e5e2e1",
+              "on-background": "#1c1b1b",
+              "on-tertiary": "#ffffff",
+              "surface-container-high": "#ebe7e7",
+              "outline": "#76786d",
+              "surface-bright": "#fcf9f8",
+              "surface-container-lowest": "#ffffff",
+              "background": "#fcf9f8",
+              "surface-container-highest": "#e5e2e1",
+              "tertiary-fixed": "#ffdcc1",
+              "on-tertiary-fixed": "#2b1705",
+              "outline-variant": "#c6c7bb",
+              "tertiary-container": "#ffecdf",
+              "secondary": "#555b87",
+              "error": "#ba1a1a",
+              "tertiary": "#755940",
+              "on-tertiary-container": "#84664d",
+              "inverse-surface": "#313030",
+              "inverse-primary": "#bfcca2",
+              "error-container": "#ffdad6",
+              "primary": "#576340",
+              "on-secondary": "#ffffff",
+              "on-tertiary-fixed-variant": "#5b412b",
+              "secondary-container": "#c6ccfe",
+              "primary-fixed-dim": "#bfcca2",
+              "on-primary-fixed": "#151f04",
+              "surface": "#fcf9f8",
+              "on-error": "#ffffff",
+              "on-secondary-container": "#4f5580",
+              "on-secondary-fixed-variant": "#3d446e",
+              "secondary-fixed": "#dee0ff",
+              "tertiary-fixed-dim": "#e5bfa2"
+            },
+            "borderRadius": {
+              "DEFAULT": "0.25rem",
+              "lg": "0.5rem",
+              "xl": "0.75rem",
+              "full": "9999px"
+            },
+            "spacing": {
+              "space-sm": "0.5rem",
+              "space-md": "1rem",
+              "margin-md": "2.5rem",
+              "space-xl": "2.5rem",
+              "space-xs": "0.25rem",
+              "margin": "1.5rem",
+              "gutter": "1.5rem",
+              "gutter-lg": "2rem",
+              "space-2xl": "4rem",
+              "space-lg": "1.5rem",
+              "margin-lg": "4rem"
+            },
+            "fontFamily": {
+              "display": ["Space Grotesk"],
+              "body-lg": ["Public Sans"],
+              "label-md": ["Space Grotesk"],
+              "display-mobile": ["Space Grotesk"],
+              "body-sm": ["Public Sans"],
+              "label-lg": ["Space Grotesk"],
+              "headline-lg-mobile": ["Space Grotesk"],
+              "body-md": ["Public Sans"],
+              "headline-md": ["Space Grotesk"],
+              "headline-sm": ["Space Grotesk"],
+              "metric-display": ["Space Grotesk"],
+              "headline-lg": ["Space Grotesk"]
+            },
+            "fontSize": {
+              "display": ["4.5rem", {
+                "lineHeight": "4.75rem",
+                "letterSpacing": "-0.04em",
+                "fontWeight": "700"
+              }],
+              "body-lg": ["1.125rem", {
+                "lineHeight": "1.75rem",
+                "fontWeight": "400"
+              }],
+              "label-md": ["0.75rem", {
+                "lineHeight": "1rem",
+                "letterSpacing": "0.08em",
+                "fontWeight": "700"
+              }],
+              "display-mobile": ["2.75rem", {
+                "lineHeight": "3rem",
+                "letterSpacing": "-0.03em",
+                "fontWeight": "700"
+              }],
+              "body-sm": ["0.875rem", {
+                "lineHeight": "1.375rem",
+                "fontWeight": "400"
+              }],
+              "label-lg": ["0.875rem", {
+                "lineHeight": "1.125rem",
+                "letterSpacing": "0.06em",
+                "fontWeight": "700"
+              }],
+              "headline-lg-mobile": ["2rem", {
+                "lineHeight": "2.25rem",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "700"
+              }],
+              "body-md": ["1rem", {
+                "lineHeight": "1.5rem",
+                "fontWeight": "400"
+              }],
+              "headline-md": ["1.875rem", {
+                "lineHeight": "2.25rem",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "600"
+              }],
+              "headline-sm": ["1.375rem", {
+                "lineHeight": "1.75rem",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "600"
+              }],
+              "metric-display": ["3.5rem", {
+                "lineHeight": "3.5rem",
+                "letterSpacing": "-0.03em",
+                "fontWeight": "700"
+              }],
+              "headline-lg": ["3rem", {
+                "lineHeight": "3.25rem",
+                "letterSpacing": "-0.03em",
+                "fontWeight": "700"
+              }]
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="bg-background font-body-md text-on-surface antialiased min-h-screen selection:bg-primary-container selection:text-on-surface">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest border-b-2 border-on-surface">
+      <div class="h-20 max-w-[1360px] mx-auto px-margin md:px-margin-md lg:px-margin-lg flex items-center justify-between">
+        <div class="flex items-center gap-space-md">
+          <!-- EDIT: NAVBAR_BRAND -->
+          <a class="flex items-center gap-space-sm border-2 border-on-surface bg-surface-container px-space-md py-space-xs shadow-[3px_3px_0px_#1c1b1b] hover:translate-x-[-1px] hover:translate-y-[-1px] hover:shadow-[4px_4px_0px_#1c1b1b] transition-all" data-path="overview" href="#hero">
+            <span class="w-3 h-3 bg-primary-container border-2 border-on-surface inline-block">
+                <img src="cygy.png" width="w-full">
+            </span>
+          </a>
+          <!--<div class="hidden xl:flex items-center border-2 border-on-surface bg-secondary-fixed px-space-sm py-space-xs">
+            <span class="font-label-md text-label-md text-on-secondary-fixed uppercase tracking-wider">Executive Ops Cadence</span>
+          </div>-->
+        </div>
+        <nav class="hidden lg:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-surface border-2 border-on-surface shadow-[2px_2px_0px_#1c1b1b]">
+          <a aria-current="page" class="px-space-md py-space-xs font-label-lg uppercase tracking-wider transition-all bg-primary-container text-on-surface border-2 border-on-surface shadow-[2px_2px_0px_#1c1b1b] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_#000] hover:bg-[#fed7b8] transition-all" data-path="overview" href="#hero">Home</a>
+          <a aria-current="page" class="px-space-md py-space-xs font-label-lg uppercase tracking-wider transition-all bg-primary-container text-on-surface border-2 border-on-surface shadow-[2px_2px_0px_#1c1b1b] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_#000] hover:bg-[#fed7b8] transition-all data-path="about" href="#about">About</a>
+          <a aria-current="page" class="px-space-md py-space-xs font-label-lg uppercase tracking-wider transition-all bg-primary-container text-on-surface border-2 border-on-surface shadow-[2px_2px_0px_#1c1b1b] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_#000] hover:bg-[#fed7b8] transition-all data-path="work-projects" href="#projects"> Projects</a>
+          <a aria-current="page" class="px-space-md py-space-xs font-label-lg uppercase tracking-wider transition-all bg-primary-container text-on-surface border-2 border-on-surface shadow-[2px_2px_0px_#1c1b1b] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_#000] hover:bg-[#fed7b8] transition-all data-path="operations-tools" href="#skills">Skills</a>
+          <a aria-current="page" class="px-space-md py-space-xs font-label-lg uppercase tracking-wider transition-all bg-primary-container text-on-surface border-2 border-on-surface shadow-[2px_2px_0px_#1c1b1b] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_#000] hover:bg-[#fed7b8] transition-all data-path="contact" href="#contact">Contact</a>
+        </nav>
+        <button aria-label="Toggle Navigation Menu" class="lg:hidden flex items-center justify-center w-10 h-10 border-2 border-on-surface bg-primary-container text-on-surface shadow-[3px_3px_0px_#1c1b1b] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all" id="mobile-nav-toggle" type="button">
+            <span class="material-symbols-outlined text-[24px]">menu</span>
+          </button>
+      </div>
+      <div class="hidden lg:hidden border-t-2 border-on-surface bg-surface-bright px-margin py-space-md" id="mobile-menu">
+        <nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-surface">
+          <a aria-current="page" class="px-space-md py-space-sm border-2 border-on-surface font-label-lg uppercase bg-primary-container text-on-surface" data-path="overview" href="#hero">Home</a>
+          <a class="px-space-md py-space-sm border-2 border-on-surface bg-surface-container font-label-lg text-label-lg uppercase text-on-surface-variant hover:bg-primary-container hover:text-on-surface" data-path="about" href="#about">About</a>
+          <a class="px-space-md py-space-sm border-2 border-on-surface bg-surface-container font-label-lg text-label-lg uppercase text-on-surface-variant hover:bg-primary-container hover:text-on-surface" data-path="work-projects" href="#projects">Projects</a>
+          <a class="px-space-md py-space-sm border-2 border-on-surface bg-surface-container font-label-lg text-label-lg uppercase text-on-surface-variant hover:bg-primary-container hover:text-on-surface" data-path="operations-tools" href="#skills">Skills</a>
+          <a class="px-space-md py-space-sm border-2 border-on-surface bg-surface-container font-label-lg text-label-lg uppercase text-on-surface-variant hover:bg-primary-container hover:text-on-surface" data-path="contact" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="w-full pt-20 bg-background">
+      <div class="flex flex-col w-full">
+        <!-- SECTION 1: HERO / LANDING -->
+        <section class="w-full border-b-2 border-black bg-surface-bright py-space-xl md:py-space-2xl" id="hero">
+          <div class="max-w-[1360px] mx-auto px-margin md:px-margin-md lg:px-margin-lg">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-gutter-lg items-center">
+              <div class="lg:col-span-7 flex flex-col items-start gap-space-md">
+                <div class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-[#9fa5d5] border-2 border-black shadow-[3px_3px_0px_#000]">
+                  <span class="w-2.5 h-2.5 bg-black inline-block"></span>
+                  <span class="font-label-md text-label-md uppercase tracking-wider text-black font-bold">Operations, Quality Assurance, and Project Management</span>
+                </div>
+                <!-- EDIT: HERO_NAME -->
+                <h1 class="font-display text-display font-bold text-on-surface uppercase tracking-tight">CJ BULANADI</h1>
+                <!-- EDIT: HERO_TITLE -->
+                <h2 class="font-headline-lg text-headline-lg text-secondary uppercase font-semibold">Chief Operations Officer</h2>
+                <!-- EDIT: HERO_INTRO -->
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">A BSIT Student from NEUST and a DOST-SEI Scholar-Leader, appointed as Chief Operations Officer of the national organization of technology-related DOST Scholars, START-DOST, for A.Y. 2026-2027.</p>
+                <div class="pt-space-sm">
+                  <a class="inline-flex items-center gap-space-sm px-space-lg py-space-md bg-primary-container text-black font-label-lg text-label-lg uppercase tracking-wider font-bold border-2 border-black shadow-[4px_4px_0px_#000] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_#000] hover:bg-[#fed7b8] transition-all" href="#projects">
+                    <span>Explore Work</span>
+                    <span class="material-symbols-outlined text-[20px]">arrow_downward</span>
+                  </a>
+                </div>
+              </div>
+              <div class="lg:col-span-5 flex justify-center lg:justify-end">
+                <div class="relative w-full max-w-md">
+                  <div class="absolute -top-3 -right-3 w-full h-full bg-[#fed7b8] border-2 border-black -z-0"></div>
+                  <div class="relative z-10 bg-white p-space-sm border-2 border-black shadow-[4px_4px_0px_#000]">
+                    <!-- EDIT: PROFILE_IMAGE -->
+                    <img alt="Profile image" class="border-2 border-black shadow-[4px_4px_0px_#000] object-cover w-full aspect-[4/5]" src="https://res.cloudinary.com/dvpfusmpv/image/upload/v1791012959/IMG_1704_cq3hgd.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION 2: ABOUT -->
+        <section class="w-full border-b-2 border-black bg-surface-container-low py-space-xl md:py-space-2xl" id="about">
+          <div class="max-w-[1360px] mx-auto px-margin md:px-margin-md lg:px-margin-lg">
+            <div class="flex items-center gap-space-sm mb-space-lg">
+              <span class="px-space-md py-space-xs bg-[#c9d3ec] border-2 border-black shadow-[3px_3px_0px_#000] font-headline-sm text-headline-sm uppercase font-bold text-black"> About </span>
+            </div>
+            <div class="border-2 border-black bg-white p-space-lg md:p-space-xl shadow-[4px_4px_0px_#000]">
+              <div class="flex items-center gap-space-xs border-b-2 border-black pb-space-sm mb-space-md bg-surface-container px-space-md py-space-xs">
+                <span class="w-3 h-3 bg-[#e8f5c9] border-2 border-black"></span>
+                <span class="w-3 h-3 bg-[#9fa5d5] border-2 border-black"></span>
+                <span class="w-3 h-3 bg-[#fed7b8] border-2 border-black"></span>
+                <span class="font-label-md text-label-md uppercase tracking-wider text-black ml-space-sm font-bold">Executive Profile Dossier</span>
+              </div>
+              <!-- EDIT: ABOUT_TEXT -->
+              <p class="text-xl leading-relaxed">Information Technology undergraduate and DOST-SEI Scholar specializing in Data Analysis, UI/UX Design, Project Management, QA, and Operations. Currently pursuing a degree at Nueva Ecija University of Science and Technology I bring a versatile skill set that bridges the gap between hands-on software development and high-level organizational leadership.</p><br>
+
+                <p class="text-xl leading-relaxed">Adept at driving technical projects from ideation to deployment, I recently developed "Uni-Stay," an automated attendance management system designed to optimize check-in operations for university facilities. My technical background includes translating complex requirements into high-fidelity UI/UX prototypes, executing database integrations, and ensuring rigorous quality assurance across system workflows. While my foundation is rooted in system design and data analysis, I maintain the flexibility to adapt to web development and broader IT infrastructure needs.</p><br>
+
+                <p class="text-xl leading-relaxed">Beyond the code, I specialize in operations and community management. As the Chief Operations Officer—and former Deputy Chief Community Development Officer for Community—at Scholars Transforming Advancement and Research for Technology, I have a proven track record of directing cross-functional teams and scaling initiatives, which includes serving as a key organizer for the National Technovation Summit 2025 in Cebu.</p><br>
+
+                <p class="text-xl leading-relaxed">Actively seeking IT internship opportunities to leverage my dual capacity for technical execution and strategic project management, delivering scalable, user-centric solutions in fast-paced environments.</p>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION 3: PROJECTS -->
+        <section class="w-full border-b-2 border-black bg-surface-bright py-space-xl md:py-space-2xl" id="projects">
+          <div class="max-w-[1360px] mx-auto px-margin md:px-margin-md lg:px-margin-lg">
+            <div class="flex items-center justify-between gap-space-sm mb-space-lg">
+              <span class="px-space-md py-space-xs bg-[#fed7b8] border-2 border-black shadow-[3px_3px_0px_#000] font-headline-sm text-headline-sm uppercase font-bold text-black"> Work Samples </span>
+              <span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-bold">Initiatives [01 - 03]</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter lg:gap-gutter-lg">
+              <!-- CARD 1 -->
+              <div class="flex flex-col border-2 border-black bg-white shadow-[4px_4px_0px_#000] p-space-md justify-between hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_#000] transition-all">
+                <div class="flex flex-col gap-space-md">
+                  <!-- EDIT: PROJECT_1_IMAGE -->
+                  <img alt="Project image" class="w-full h-48 object-cover border-2 border-black" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6EEAu3I1sdIEaLBuIXEblhmXgtkYPJYPPFVcnGFe43eGhb4e6KKAyr0gs&s=10" />
+                  <div class="flex flex-col gap-space-xs">
+                    <!-- EDIT: PROJECT_1_TITLE -->
+                    <h3 class="font-headline-sm text-headline-sm uppercase font-bold text-black">START-DOST</h3>
+                    <!-- EDIT: PROJECT_1_DESCRIPTION -->
+                    <p class="font-body-md text-body-md text-on-surface-variant">START-DOST Website</p>
+                  </div>
+                </div>
+                <div class="pt-space-md mt-space-md border-t-2 border-black">
+                  <!-- EDIT: PROJECT_1_LINK -->
+                  <a class="inline-block px-4 py-2 border-2 border-black bg-[#fed7b8] font-bold shadow-[2px_2px_0px_#000] font-label-lg text-label-lg uppercase tracking-wider hover:translate-x-[-1px] hover:translate-y-[-1px] hover:shadow-[3px_3px_0px_#000] transition-all" href="https://www.start-dost.org" target="_blank"x`>Project Link</a>
+                </div>
+              </div>
+              <!-- CARD 2 -->
+              <div class="flex flex-col border-2 border-black bg-white shadow-[4px_4px_0px_#000] p-space-md justify-between hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_#000] transition-all">
+                <div class="flex flex-col gap-space-md">
+                  <!-- EDIT: PROJECT_2_IMAGE -->
+                  <img alt="Project image" class="w-full h-48 object-cover border-2 border-black" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6EEAu3I1sdIEaLBuIXEblhmXgtkYPJYPPFVcnGFe43eGhb4e6KKAyr0gs&s=10" />
+                  <div class="flex flex-col gap-space-xs">
+                    <!-- EDIT: PROJECT_2_TITLE -->
+                    <h3 class="font-headline-sm text-headline-sm uppercase font-bold text-black">START-DOST</h3>
+                    <!-- EDIT: PROJECT_2_DESCRIPTION -->
+                    <p class="font-body-md text-body-md text-on-surface-variant">START-DOST Webiste</p>
+                  </div>
+                </div>
+                <div class="pt-space-md mt-space-md border-t-2 border-black">
+                  <!-- EDIT: PROJECT_2_LINK -->
+                  <a class="inline-block px-4 py-2 border-2 border-black bg-[#c9d3ec] font-bold shadow-[2px_2px_0px_#000] font-label-lg text-label-lg uppercase tracking-wider hover:translate-x-[-1px] hover:translate-y-[-1px] hover:shadow-[3px_3px_0px_#000] transition-all" href="https://www.start-dost.org" target="_blank">Project Link</a>
+                </div>
+              </div>
+              <!-- CARD 3 -->
+              <div class="flex flex-col border-2 border-black bg-white shadow-[4px_4px_0px_#000] p-space-md justify-between hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_#000] transition-all">
+                <div class="flex flex-col gap-space-md">
+                  <!-- EDIT: PROJECT_3_IMAGE -->
+                  <img alt="Project image" class="w-full h-48 object-cover border-2 border-black" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6EEAu3I1sdIEaLBuIXEblhmXgtkYPJYPPFVcnGFe43eGhb4e6KKAyr0gs&s=10" />
+                  <div class="flex flex-col gap-space-xs">
+                    <!-- EDIT: PROJECT_3_TITLE -->
+                    <h3 class="font-headline-sm text-headline-sm uppercase font-bold text-black">START-DOST</h3>
+                    <!-- EDIT: PROJECT_3_DESCRIPTION -->
+                    <p class="font-body-md text-body-md text-on-surface-variant">START-DOST Website</p>
+                  </div>
+                </div>
+                <div class="pt-space-md mt-space-md border-t-2 border-black">
+                  <!-- EDIT: PROJECT_3_LINK -->
+                  <a class="inline-block px-4 py-2 border-2 border-black bg-[#e8f5c9] font-bold shadow-[2px_2px_0px_#000] font-label-lg text-label-lg uppercase tracking-wider hover:translate-x-[-1px] hover:translate-y-[-1px] hover:shadow-[3px_3px_0px_#000] transition-all" href="https://www.start-dost.org" target="_blank">Project Link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION 4: SKILLS / TOOLS -->
+        <section class="w-full border-b-2 border-black bg-surface-container-low py-space-xl md:py-space-2xl" id="skills">
+          <div class="max-w-[1360px] mx-auto px-margin md:px-margin-md lg:px-margin-lg">
+            <div class="flex items-center gap-space-sm mb-space-lg">
+              <span class="px-space-md py-space-xs bg-[#e8f5c9] border-2 border-black shadow-[3px_3px_0px_#000] font-headline-sm text-headline-sm uppercase font-bold text-black"> Operational Capabilities </span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter lg:gap-gutter-lg">
+              <!-- CARD 1 (SKILLS) -->
+              <div class="border-2 border-black bg-white p-space-lg shadow-[4px_4px_0px_#000]">
+                <div class="flex items-center gap-space-sm border-b-2 border-black pb-space-sm mb-space-md bg-[#9fa5d5] px-space-md py-space-xs">
+                  <span class="material-symbols-outlined text-black text-[22px]">tune</span>
+                  <span class="font-headline-sm text-headline-sm uppercase font-bold text-black">Skills</span>
+                </div>
+                <!-- EDIT: SKILLS_LIST -->
+                <ul class="space-y-3">
+                  <li class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-black inline-block"></span>UI/UX
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-black inline-block"></span>Quality Assurance
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-black inline-block"></span>Project Management
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-black inline-block"></span>Data Analysis
+                  </li>
+                </ul>
+              </div>
+              <!-- CARD 2 (TOOLS / TECHNOLOGIES) -->
+              <div class="border-2 border-black bg-white p-space-lg shadow-[4px_4px_0px_#000]">
+                <div class="flex items-center gap-space-sm border-b-2 border-black pb-space-sm mb-space-md bg-[#c9d3ec] px-space-md py-space-xs">
+                  <span class="material-symbols-outlined text-black text-[22px]">terminal</span>
+                  <span class="font-headline-sm text-headline-sm uppercase font-bold text-black">Tools / Technologies</span>
+                </div>
+                <!-- EDIT: TOOLS_LIST -->
+                <ul class="space-y-3">
+                  <li class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-black inline-block"></span>Git/Github
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-black inline-block"></span>Ionic/Flutter
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-black inline-block"></span>Java, C++
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-black inline-block"></span>Python, SQL
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION 5: CONTACT -->
+        <section class="w-full bg-surface-bright py-space-xl md:py-space-2xl" id="contact">
+          <div class="max-w-[1360px] mx-auto px-margin md:px-margin-md lg:px-margin-lg">
+            <div class="flex items-center gap-space-sm mb-space-lg">
+              <span class="px-space-md py-space-xs bg-[#fed7b8] border-2 border-black shadow-[3px_3px_0px_#000] font-headline-sm text-headline-sm uppercase font-bold text-black"> Contact </span>
+            </div>
+            <div class="border-2 border-black bg-white p-space-lg md:p-space-xl shadow-[4px_4px_0px_#000] max-w-2xl">
+              <div class="flex flex-col gap-space-md">
+                <!-- EDIT: CONTACT_EMAIL -->
+                <div class="flex items-center gap-3">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                  </svg>
+                  <a class="font-medium underline" href="mailto:jamesbulanadi04@gmail.com" target="_blank">jamesbulanadi04@gmail.com</a>
+                </div>
+                <!-- EDIT: CONTACT_INFO -->
+                <div class="flex items-center gap-3">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                    <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                  </svg>
+                  <span>+639636043081</span>
+                </div>
+                <!-- EDIT: CONTACT_SOCIAL -->
+                <div class="flex items-center gap-3">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                    <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                  </svg>
+                  LinkedIn: <a class="font-medium underline" href="https://www.linkedin.com/in/cygycyg" target="_blank">Carl James Bulanadi</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="w-full border-t-2 border-on-surface bg-surface-container-low">
+      <div class="max-w-[1360px] mx-auto px-margin md:px-margin-md lg:px-margin-lg py-space-xl">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+          <div class="md:col-span-6 flex flex-col gap-space-xs">
+            <div class="flex items-center gap-space-sm">
+              <div class="w-3 h-3 bg-secondary-fixed border-2 border-on-surface"></div>
+              <div class="w-3 h-3 bg-tertiary-fixed border-2 border-on-surface"></div>
+              <div class="w-3 h-3 bg-primary-fixed border-2 border-on-surface"></div>
+              <span class="font-headline-sm text-headline-sm uppercase text-on-surface font-bold tracking-tight">Carl James Bulanadi</span>
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">Chief Operations Officer, START-DOST</p>
+          </div>
+          <div class="md:col-span-6 flex flex-col md:flex-row items-start md:items-center justify-between md:justify-end gap-space-lg">
+            <div class="font-label-md text-label-md uppercase text-on-surface-variant">© 2026 CJ Bulanadi</div>
+            <a class="inline-flex items-center gap-space-xs border-2 border-on-surface bg-surface-container-lowest px-space-md py-space-xs shadow-[3px_3px_0px_#1c1b1b] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[5px_5px_0px_#1c1b1b] hover:bg-primary-container transition-all text-on-surface font-label-md text-label-md uppercase font-bold" href="#hero">
+              <span>Top</span>
+              <span class="material-symbols-outlined text-[16px]">north</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      (function() {
+        const toggle = document.getElementById('mobile-nav-toggle');
+        const menu = document.getElementById('mobile-menu');
+        if (toggle && menu) {
+          toggle.addEventListener('click', function() {
+            menu.classList.toggle('hidden');
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
